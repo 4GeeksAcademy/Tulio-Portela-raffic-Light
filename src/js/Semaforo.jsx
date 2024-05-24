@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
 const Semaforo = () => {
-  // Estado para controlar la luz activa
   const [luzActiva, setLuzActiva] = useState(null);
 
-  // Función para manejar el clic sobre cada farol
   const manejarClic = (color) => {
     if (luzActiva === color) {
-      setLuzActiva(null); // Apagar si es el mismo que ya estaba activo
+      setLuzActiva(null);
     } else {
-      setLuzActiva(color); // Encender el nuevo y apagar los otros
+      setLuzActiva(color); 
     }
   };
 
